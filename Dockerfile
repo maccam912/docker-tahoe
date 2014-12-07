@@ -6,4 +6,4 @@ RUN apt-get install wget python2.7 unzip build-essential python-dev python-setup
 RUN wget --no-check-certificate https://tahoe-lafs.org/source/tahoe-lafs/releases/allmydata-tahoe-1.10.0.zip
 RUN unzip allmydata-tahoe-1.10.0.zip
 RUN rm *.zip
-RUN cd allmydata-tahoe-1.10.0 && ls && python -v && python setup.py build
+RUN cd allmydata-tahoe-1.10.0 && python setup.py build
