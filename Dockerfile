@@ -6,4 +6,4 @@ RUN apt-get install wget python unzip build-essential -y
 RUN wget https://tahoe-lafs.org/source/tahoe-lafs/releases/allmydata-tahoe-1.10.0.zip
 RUN unzip allmydata-tahoe-1.10.0.zip
 RUN rm *.zip
-RUN cd allmydata* && python setup.py build
+RUN cd allmydata-tahoe-1.10.0 && ls && python setup.py build
