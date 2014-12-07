@@ -13,3 +13,5 @@ RUN cd allmydata-tahoe-1.10.0/bin && ./tahoe create-node
 RUN cd /root/.tahoe && rm tahoe.cfg && wget --no-check-certificate https://raw.githubusercontent.com/maccam912/docker-tahoe/master/tahoe.cfg
 
 RUN cd allmydata-tahoe-1.10.0/bin && ./tahoe start
+
+EXPOSE 3456:3456
