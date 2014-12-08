@@ -15,3 +15,5 @@ RUN cd /root/.tahoe && rm tahoe.cfg && wget --no-check-certificate https://raw.g
 RUN cd allmydata-tahoe-1.10.0/bin && ./tahoe start
 
 EXPOSE 3456:3456
+
+EXPOSE 39531:39531
