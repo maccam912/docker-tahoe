@@ -1,4 +1,4 @@
-FROM debian:wheezy
+FROM ubuntu:14.10
 MAINTAINER "Matt Koski" <maccam912@gmail.com>
 
 RUN apt-get update
