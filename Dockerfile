@@ -16,6 +16,7 @@ RUN cd /root/.tahoe && wget --no-check-certificate https://raw.githubusercontent
 RUN cd /root/.tahoe && cat ./tahoe1 >> tahoe.cfg
 RUN cd /root/.tahoe && echo "nickname = "$(< /dev/urandom tr -dc A-Za-z | head -c${1:-32};echo;) >> tahoe.cfg
 RUN cd /root/.tahoe && echo "tub.location = "$(curl -s icanhazip.com) >> tahoe.cfg
+RUN cd /root/.tahoe && cat ./tahoe2 >> tahoe.cfg
 RUN cd /root/.tahoe && rm tahoe1 && rm tahoe2
 
 RUN cd allmydata-tahoe-1.10.0/bin && ./tahoe start
