@@ -16,4 +16,4 @@ RUN cd /root/.tahoe && rm tahoe.cfg && wget --no-check-certificate https://raw.g
 
 EXPOSE 3456
 
-EXPOSE 39531
+EXPOSE 39499
