@@ -1,4 +1,4 @@
-FROM ubuntu:14.10
+FROM ubuntu:14.04.1
 MAINTAINER "Matt Koski" <maccam912@gmail.com>
 
 RUN apt-get update
