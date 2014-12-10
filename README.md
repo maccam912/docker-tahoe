@@ -1,7 +1,7 @@
 (tahoe-node) docker-tahoe
 ============
 
-What should work the best: `curl https://gist.githubusercontent.com/maccam912/de9301effbc13710a3aa/raw/efb2a28db829852ac97e9879148a1ce77afc62d4/tahoe-node.sh | bash`
+Run `docker run -it -p 3456:3456 -p 39499:39499 maccam912/tahoe-node /bin/bash`, once you are connected run `/tahoe-run.sh` and when that is finished, CTRL+P and CTRL+Q will let you detach from the running container. Go to the URL of your container, port 3456, for a client that is connected to the network.
 
 
 To connect to the grid:
