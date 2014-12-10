@@ -1,6 +1,6 @@
 web.port = tcp:3456:interface=0.0.0.0
 web.static = public_html
-tub.port = 39499
+#tub.port =
 #log_gatherer.furl =
 #timeout.keepalive =
 #timeout.disconnect =
