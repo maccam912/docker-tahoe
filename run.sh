@@ -13,4 +13,4 @@ if [ ! -f /root/.tahoe/tahoe.cfg ]; then
   rm tahoe2
 fi
 
-/allmydata-1.10.0/bin/tahoe restart
+/allmydata-tahoe-1.10.0/bin/tahoe restart
