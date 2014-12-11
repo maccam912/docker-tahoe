@@ -27,7 +27,7 @@ enabled = true
 reserved_space = 10M
 expire.enabled = true
 expire.mode = age
-expire.override_lease_duration = 12 months
+expire.override_lease_duration = 3 months
 
 [helper]
 # Shall this node run a helper service that clients can use?
