@@ -13,4 +13,9 @@ if [ ! -f /root/.tahoe/tahoe.cfg ]; then
   rm tahoe2
 fi
 
-/allmydata-tahoe-1.10.0/bin/tahoe restart &
+/allmydata-tahoe-1.10.0/bin/tahoe restart
+
+while [ true ]
+do
+  echo "."
+done
