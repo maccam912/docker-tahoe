@@ -14,3 +14,5 @@ if [ ! -f /root/.tahoe/tahoe.cfg ]; then
 fi
 
 /allmydata-tahoe-1.10.0/bin/tahoe restart
+
+read -p "Press any key to exit..."
