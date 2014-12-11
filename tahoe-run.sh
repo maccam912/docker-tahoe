@@ -18,4 +18,5 @@ fi
 while [ true ]
 do
   echo "."
+  sleep 600
 done
