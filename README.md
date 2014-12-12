@@ -1,7 +1,7 @@
 (tahoe-node) docker-tahoe
 ============
 
-EASY WAY: `docker run -d -p 3456:3456 -p 39499:39499 maccam912/tahoe-node /tahoe-run.sh`
+EASY WAY: `mkdir ~/storage && docker run -d -p 3456:3456 -p 39499:39499 -v ~/storage:/root/.tahoe/storage maccam912/tahoe-node /tahoe-run.sh`
 
 
 To connect to the grid:
