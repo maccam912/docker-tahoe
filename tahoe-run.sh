@@ -17,6 +17,5 @@ pypy /allmydata-tahoe-1.10.0/bin/tahoe restart
 
 while [ true ]
 do
-  echo "."
   sleep 600
 done
