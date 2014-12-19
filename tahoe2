@@ -16,9 +16,9 @@ helper.furl =
 #stats_gatherer.furl =
 
 # What encoding parameters should this client use for uploads?
-shares.needed = 3
+shares.needed = 9
 shares.happy = 7
-shares.total = 10
+shares.total = 30
 
 [storage]
 # Shall this node provide storage service?
