@@ -7,12 +7,7 @@ RUN wget --no-check-certificate https://tahoe-lafs.org/source/tahoe-lafs/release
 RUN unzip allmydata-tahoe-1.10.0.zip
 RUN rm *.zip
 
-RUN wget -O - http://nuitka.net/deb/archive.key.gpg | apt-key add -
-RUN echo >/etc/apt/sources.list.d/nuitka.list "deb http://nuitka.net/deb/stable/trusty trusty main"
-RUN apt-get update
-RUN apt-get install nuitka -y
-
-RUN cd allmydata-tahoe-1.10.0 && python setup.py build
+RUN cd allmydata-tahoe-1.10.0 && pypy setup.py build
 
 RUN cd allmydata-tahoe-1.10.0/bin && ./tahoe create-node
 
