@@ -12,7 +12,7 @@ RUN echo >/etc/apt/sources.list.d/nuitka.list "deb http://nuitka.net/deb/stable/
 RUN apt-get update
 RUN apt-get install nuitka -y
 
-RUN cd allmydata-tahoe-1.10.0 && nuitka setup.py build
+RUN cd allmydata-tahoe-1.10.0 && python setup.py build
 
 RUN cd allmydata-tahoe-1.10.0/bin && ./tahoe create-node
 
