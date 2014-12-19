@@ -7,7 +7,7 @@ RUN wget --no-check-certificate https://tahoe-lafs.org/source/tahoe-lafs/release
 RUN unzip allmydata-tahoe-1.10.0.zip
 RUN rm *.zip
 
-RUN cd allmydata-tahoe-1.10.0 && pypy setup.py build
+RUN cd allmydata-tahoe-1.10.0 && python setup.py build
 
 RUN cd allmydata-tahoe-1.10.0/bin && ./tahoe create-node
 
