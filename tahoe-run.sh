@@ -13,7 +13,7 @@ if [ ! -f /root/.tahoe/tahoe.cfg ]; then
   rm tahoe2
 fi
 
-python /allmydata-tahoe-1.10.0/bin/tahoe restart
+pypy /allmydata-tahoe-1.10.0/bin/tahoe restart
 
 while [ true ]
 do
