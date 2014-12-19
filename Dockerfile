@@ -9,7 +9,7 @@ RUN rm *.zip
 
 RUN CODENAME=`lsb_release -c -s`
 RUN wget -O - http://nuitka.net/deb/archive.key.gpg | apt-key add -
-RUN echo >/etc/apt/sources.list.d/nuitka.list "deb http://nuitka.net/deb/stable/$CODENAME $CODENAME main"
+RUN echo "deb http://nuitka.net/deb/stable/$CODENAME $CODENAME main" >> /etc/apt/sources.list.d/nuitka.list
 RUN apt-get update
 RUN apt-get install nuitka
 RUN cd allmydata-tahoe-1.10.0 && nuitka setup.py build
