@@ -7,7 +7,7 @@ RUN wget --no-check-certificate https://tahoe-lafs.org/source/tahoe-lafs/release
 RUN unzip allmydata-tahoe-1.10.0.zip
 RUN rm *.zip
 
-RUN echo "alias python = 'pypy'" >> ~/.bashrc
+#RUN echo "alias python = 'pypy'" >> ~/.bashrc
 RUN cd allmydata-tahoe-1.10.0 && python setup.py build
 
 RUN cd allmydata-tahoe-1.10.0/bin && ./tahoe create-node
@@ -17,6 +17,7 @@ RUN rm /root/.tahoe/tahoe.cfg
 RUN wget --no-check-certificate https://raw.githubusercontent.com/maccam912/docker-tahoe/master/tahoe-run.sh
 
 RUN chmod 755 tahoe-run.sh
+CMD ["python","tahoe-run.sh"]
 
 EXPOSE 3456:3456
 
