@@ -17,5 +17,6 @@ pypy /allmydata-tahoe-1.10.0/bin/tahoe restart
 
 while [ true ]
 do
-  sleep 600
+  sleep 60
+  echo "Running..."
 done
