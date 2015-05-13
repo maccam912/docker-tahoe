@@ -9,6 +9,7 @@ if [ ! -f /root/.tahoe/tahoe.cfg ]; then
   echo "nickname = "$(echo "tub.location = "$(curl -s icanhazip.com)":37748,127.0.0.1:37748" | base64 | head -c${1:-32};echo;) >> tahoe.cfg
   echo "tub.location = "$(curl -s icanhazip.com)":37748,127.0.0.1:37748" >> tahoe.cfg
   cat ./tahoe2 >> tahoe.cfg
+  sed -i "s/INTRODUCER_FURL/$INTRODUCER_FURL/g" tahoe.cfg
   rm tahoe1
   rm tahoe2
 fi
