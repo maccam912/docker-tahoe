@@ -9,8 +9,8 @@ tub.port = 39499
 
 [client]
 # Which services should this client connect to?
-introducer.furl = INTRODUCER_FURL
-#introducer.furl = pb://oaw6kql7wyvltxxez6lbrhkinjxgbddl@64.90.42.127:38046,10.241.132.192:38046,127.0.0.1:38046/tlwdmrlv2cl2dpi6axpjg7yva6p4itve
+introducer.furl = INTRODUCER_FULR
+#introducer.furl = pb://n56npcadk2amo3okj7mdzdpnequqa67u@192.99.86.210:42466,127.0.0.1:42466/dnxrpkukj7ezmnqbtqow2jxb7n23pxdn
 helper.furl =
 #key_generator.furl =
 #stats_gatherer.furl =
