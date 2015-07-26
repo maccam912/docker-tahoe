@@ -2,15 +2,13 @@ FROM ubuntu:14.04.1
 MAINTAINER "Matt Koski" <maccam912@gmail.com>
 
 RUN apt-get update
-RUN apt-get install curl wget vim pypy unzip build-essential python-dev python-openssl python-setuptools -y
-RUN wget --no-check-certificate https://tahoe-lafs.org/source/tahoe-lafs/releases/allmydata-tahoe-1.10.0.zip
-RUN unzip allmydata-tahoe-1.10.0.zip
-RUN rm *.zip
+RUN apt-get install tahoe-lafs
 
-#RUN echo "alias python = 'pypy'" >> ~/.bashrc
-RUN cd allmydata-tahoe-1.10.0 && python setup.py build
+RUN adduser tahoe_user
 
-RUN cd allmydata-tahoe-1.10.0/bin && ./tahoe create-node
+USER tahoe_user
+
+RUN tahoe create-node
 
 RUN rm /root/.tahoe/tahoe.cfg
 
